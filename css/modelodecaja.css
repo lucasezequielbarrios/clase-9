@@ -1,0 +1,132 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+body {
+    background-color: rgb(16, 16, 16);
+    color: rgb(208, 196, 180);
+    margin: 0; /* 8px */
+}
+
+h1 {
+    background-color:rgb(24, 81, 62) ;
+    color: rgb(207, 207, 207);
+
+    width: 300px; /* ancho */
+    height: 300px; /* alto */
+    padding: 16px; /* 16px + 300px + 16px */
+    /* margin: 16px;  margen externo */
+
+    margin-top: 150px; /* margen superior */
+    margin-right: auto; /* margen derecho */
+    margin-bottom: 150px; /* margen inferior */
+    margin-left: auto; /* margen izquierdo */
+
+    margin: 150px auto; /* margen superior e inferior = 0, margen izquierdo y derecho */
+
+    padding-top: 16px; /* padding superior */
+    padding-right: 16px; /* padding derecho */
+    padding-bottom: 16px; /* padding inferior */
+    padding-left: 16px; /* padding izquierdo */
+
+    box-sizing: border-box; /* content-box: suma padding y borde, border-box no afecta al tamaño final del elemento */
+}
+
+p {
+    width: 300px; /* ancho */
+    height: 300px; /* alto */
+    padding: 16px; /* 16px + 300px + 16px */
+    margin: 16px; /* margen externo */
+    border: 3px solid #fff; /* grosor estilo y color */ /* 3px + 16px + 300px + 16px + 3px */
+
+    border-top: 3px solid #fff;
+    border-right: 3px solid #fff;
+    border-bottom: 3px solid #fff; 
+    border-left: 3px solid #fff;
+
+    box-sizing: border-box;
+}
+
+/* Link en reposo */
+a:link {
+    color: rgb(133, 170, 225);
+    text-decoration: none;
+}
+
+/* Link visitado */
+a:visited {
+    color: rgb(133, 170, 225);
+}
+
+/* Cuando pasamos por encima con el cursor */
+a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* Cuando hacemos click sobre el link */
+a:active {
+    color: purple;
+}
+
+ul {
+    background-color: rgb(67, 67, 67);
+    list-style: none; /* sacar las viñetas */
+    padding-left: 0; /* quita el padding del ul */
+    width: 350px;
+    margin: 0 auto; /* 0 arriba y abajo, automático izq y der */
+    text-align: center;
+}
+
+li {
+    display: inline-block; /* cambiar el comportamiento del elemento de bloque a línea bloque */
+    margin: 8px;
+}
+
+a.principal:link {
+    display: inline-block;
+    text-decoration: none;
+    padding: 12px 8px; /* arriba y abajo, izquierda y derecha */
+    border: 2px solid #ffffff;
+    border-radius: 8px;
+}
+
+a.principal:visited {
+    border: 2px solid #ffffff;
+}
+
+a.principal:hover {
+    border: 2px solid #ffffff00;
+    background-color: red;
+}
+
+a.principal:active {
+    border: 2px solid #ffffff00;
+    background-color: red;
+}
+
+/* Bienvenida */
+#bienvenida {
+    background-image: url('../img/bienvenida_sm.jpg');
+    background-repeat: no-repeat;
+    /* background-position: center; */
+    background-size: cover;
+    text-align: center;
+
+    width: 600px;
+    height: 400px;
+    margin: 0 auto;
+
+    padding-top: 150px;
+
+    box-sizing: border-box;
+}
+
+#bienvenida h2 {
+    background-color: rgba(0, 0, 0, 0.739);
+    padding: 16px 0;
+}

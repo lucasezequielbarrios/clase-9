@@ -1,0 +1,166 @@
+/* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*
+font-family: 'Noto Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+*/
+
+.colores {
+    color: #07020D;
+    color: #F1E9DB;
+    color: #5DB7DE;
+    color: #A39B8B;
+    color: #716A5C;
+}
+
+body {
+    font-family: 'Noto Sans', sans-serif;
+    color: #07020D;
+    background-color: #F1E9DB;
+    margin: 0;
+
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+section{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Encabezado y barra de navegación principal */
+header {
+    background-color: #07020D;
+    padding: 32px 0;
+}
+.contenedor-header {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    display: flex;
+    gap: 32px;
+}
+
+/* Bienvenida */
+
+
+/* Novedades */
+.contenedor-novedades {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+article {
+    width: 247px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+article h2,
+article h3 {
+    margin: 0;
+}
+article h2{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+article h3{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+/* Sobre Nosotros */
+
+video {
+    width: 550px;
+}
+
+iframe {
+    border: none;
+    width: 1200px;
+    height: 550px;
+}
+
+.contenido {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.direccion {
+    width: 550px;
+}
+
+
+/* Catálogo */
+
+
+
+/* Footer / Pié de página */
+footer {
+    background-color: #716A5C;
+    color: #F1E9DB;
+    padding: 65px 0;
+    margin-top: 32px;
+}
+
+/* Formularios */
+.formulario {
+    text-align: center;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.formulario input,
+.formulario textarea,
+.formulario select {
+    display: block; /* agrega los saltos de línea*/
+    width: 450px; /* ancho */
+    margin: 15px auto; /* centra el elemento */
+
+    padding: 10px; /* área del texto */
+
+    border-radius: 0px;  /* ajuste del radio de las esquinas */
+    border: none;
+    border-bottom: 2px solid #716A5C;
+
+    outline: none;
+}
+
+.formulario input:focus,
+.formulario textarea:focus,
+.formulario select:focus {
+    border-bottom: 2px solid #5DB7DE;
+}
+
+.formulario textarea {
+    height: 200px;
+}
+
+.formulario .opciones {
+    display: inline-block; /* línea bloque, no tiene saltos de línea y el ancho del elemento es fijado por su contenido. */
+    width: auto;
+    margin: 5px;
+}
+
+.formulario .submit {
+    background-color: #5DB7DE;
+    font-weight: 700;
+    border: none;
+}

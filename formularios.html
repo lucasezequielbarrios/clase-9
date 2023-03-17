@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+    <link rel="stylesheet" href="css/formularios.css">
+</head>
+<body>
+    <h1>Formularios</h1>
+    <form action="">
+        <label>
+            Nombre:
+            <input class="input-texto" type="text" name="nombre" placeholder="¿cómo te llamás?">
+        </label>
+        
+        <br><br><br>
+        
+        <label for="apellido">Ingresar apellido:</label>
+        <input type="text" name="apellido" id="apellido">
+        
+        <br><br><br>
+        
+        <label>
+            Ingresar edad:
+            <input type="number" min="18" max="100" name="edad">
+        </label>
+        
+        <br><br><br>
+        
+        <label>
+            Email:
+            <input type="email" name="email" placeholder="email@dominio.com" required>
+        </label>
+        
+        <br><br><br>
+        
+        <label>
+            Password:
+            <input type="password" name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+        </label>
+        
+        <br><br><br>
+        
+        <label for="mensaje">Dejanos tu mensaje:</label>
+        <textarea name="mensaje" id="mensaje"></textarea>
+        
+        <br><br><br>
+        
+        <label for="perfil"></label>
+        <input type="file" id="perfil" name="perfil" multiple>
+        
+        <br>
+        
+        <p>¿Querés recibir nuestro newsletter?</p>
+        <label for="si">Si</label>
+        <input type="radio" id="si" name="newsletter" value="si" checked>
+        <label for="no">No</label>
+        <input type="radio" id="no" name="newsletter" value="no">
+        
+        <br>
+
+        <p>¿Cuáles son tus géneros literarios favoritos?</p>
+        <input type="checkbox" value="Ciencia Ficción" name="cienciaficcion" id="cienciaficcion">
+        <label for="cienciaficcion">Ciencia Ficción</label>
+
+        <br>
+
+        <input type="checkbox" value="Fantasía" name="fantasia" id="fantasia">
+        <label for="fantasia">Fantasía</label>
+
+        <br><br><br>
+
+        <label for="acepta">Acepto los términos y condiciones</label>
+        <input type="checkbox" id="acepta" required value="si">
+
+        <br><br><br>
+        <label for="provincia">Provincia:</label>
+        <select name="provincia" id="provincia" required>
+            <option disabled="true" selected value="">Seleccionar una Provincia</option>
+            <option value="Córdoba">Córdoba</option>
+            <option value="Tucumán">Tucumán</option>
+        </select>
+
+
+        <br><br><br>
+        <button>Enviar</button>
+    </form>
+</body>
+</html>
